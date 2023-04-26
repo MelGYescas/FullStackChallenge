@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-cs5&0gm#=b63^245e($_!_hf*gqix5awir&d^nt029s=9a3+fg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '134.122.95.134']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '134.122.95.134','159.223.184.92']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",  # Asegúrate de que este sea el dominio y puerto correctos para tu aplicación Angular
 ]
