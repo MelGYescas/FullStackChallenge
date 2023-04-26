@@ -26,11 +26,10 @@ SECRET_KEY = 'django-insecure-cs5&0gm#=b63^245e($_!_hf*gqix5awir&d^nt029s=9a3+fg
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '134.122.95.134','159.223.184.92','melyes.xyz','www.melyes.xyz']
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
-    "*",  
 ]
-
 
 
 # Application definition
