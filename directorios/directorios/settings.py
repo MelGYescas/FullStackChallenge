@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '134.122.95.134','159.223.184.92','melyes.xyz','www.melyes.xyz']
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",  # Asegúrate de que este sea el dominio y puerto correctos para tu aplicación Angular
+    "http://localhost:4200",
+    "*",  
 ]
 
 
@@ -47,14 +48,14 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'directorios.urls'
