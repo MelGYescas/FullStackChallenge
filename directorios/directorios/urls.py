@@ -18,8 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from api.view_entry import ReceptionData
 from api.view_data_general import ListUserCustomerView
+from api import views
+
 
 urlpatterns = [
+    path('', views.home, name='home'),
     path('admin/', admin.site.urls),
     path('reception/', ReceptionData.as_view(), name='reception-data'),
     path('api/user-customer/', ListUserCustomerView.as_view(), name='user-customer-list'),

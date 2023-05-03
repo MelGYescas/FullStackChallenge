@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel Yescas - Portafolio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/miestilo.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1>Mariel Glez. Yescas</h1>
+      <p>Me puedes decir Mel Yescas</p>
+    </header>
+    <main>
+      <section>
+        <h2>Presentación</h2>
+        <p>Hola, mi nombre es Mel Yescas y soy desarrolladora web full stack. Me apasiona crear aplicaciones web dinámicas e interactivas que brinden una excelente experiencia al usuario. Soy experta en tecnologías como Django, React, Bootstrap, entre otras.</p>
+      </section>
+      <section>
+        <h2>Portafolio</h2>
+        <p>Este es mi portafolio personal donde puedes ver algunos de mis proyectos más recientes:</p>
+        <ul>
+          <li><a href="https://melgyescas.github.io/FrontFullStackChallenge/">Proyecto Frontend Full Stack Challenge</a></li>
+          <li><a href="#">Proyecto X</a></li>
+          <li><a href="#">Proyecto Y</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>APIs</h2>
+        <p>Aquí puedes encontrar información sobre las APIs que he desarrollado:</p>
+        <ul>
+          <li><a href="/api/user-customer/">API de clientes</a>: Obtiene la lista de clientes, separados en dos grupos: repetidos y no repetidos.</li>
+          <li><a href="/reception/">API de recepción de datos</a>: Permite cargar un archivo CSV y procesarlo, creando clientes y usuarios en la base de datos.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
